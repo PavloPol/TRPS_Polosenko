@@ -1,7 +1,6 @@
 import os
 import re
 
-
 def sloc(path):
     total_lines = 0
     blank_lines = 0
@@ -22,5 +21,5 @@ def sloc(path):
     return total_lines, blank_lines, comment_lines, comment_statistics
 
 
-sloc = sloc("test/")
+sloc = sloc("venv/Lib/site-packages/numpy")
 print(f'Physical SLOC: total lines {sloc[0]}, blank lines {sloc[1]}, comment lines {sloc[2]}, comment ratio {sloc[3]}')
